@@ -121,7 +121,8 @@ const PROJECTS: Project[] = [
     <h1>{{title}}</h1>
     <h2>My Projects</h2>
 	<ul class="projects">
-	  <li *ngFor="let project of projects" (click)="onSelect(project)">
+	  <li *ngFor="let project of projects" [class.selected]="project === selectedProject"
+	  (click)="onSelect(project)">
 	  	<span class="badge">{{project.id}}</span> {{project.title}}
 	  </li>
 	</ul>
