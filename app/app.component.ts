@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import { ProjectComponent } from './project.component';
 
 export class Project {
 	id: number;
@@ -117,24 +118,7 @@ const PROJECTS: Project[] = [
 
 @Component({
     selector: 'my-app',
-    template: `
-    <h1>{{title}}</h1>
-    <h2>My Projects</h2>
-	<ul class="projects">
-	  <li *ngFor="let project of projects" [class.selected]="project === selectedProject"
-	  (click)="onSelect(project)">
-	  	<span class="badge">{{project.id}}</span> {{project.title}}
-	  </li>
-	</ul>
-	<div *ngIf="selectedProject">
-	    <h2>{{selectedProject.title}} details!</h2>
-	    <div> <label>id: </label>{{selectedProject.id}}</div>
-		<div>
-	    	<label>title: </label>
-	    	<input [(ngModel)]= "selectedProject.title" placeholder= "title" />
-		</div>
-	</div>
-	`,
+    templateUrl: 'app/app.component.html',
 	styles: [`
   .selected {
     background-color: #CFD8DC !important;
@@ -183,7 +167,8 @@ const PROJECTS: Project[] = [
     margin-right: .8em;
     border-radius: 4px 0 0 4px;
   }
-`]
+`],
+	directives: [ProjectComponent]
 })
 
 export class AppComponent {
