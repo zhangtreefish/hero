@@ -1,13 +1,12 @@
-<div *ngIf="project" class="jumbotron">
-	<span class='badge'> {{project.id}} </span> {{project.title}}
-	<p> description: {{project.description}}</p>
-	<ul> tools:
-		<li *ngFor="let tool of project.tools">{{tool}} </li>
-	</ul>
-	<img [src]="project.image" alt="img" width="200px" />
-	<p><a class="btn btn-primary btn-lg" [href]="project.url" role="button">Visit App Url </a></p>
-<!-- 	<div>
-		<lable>title: </lable>
-		<input [(ngModel)]="project.title" placeholder="title"/>
-	</div> -->
-</div>
+<section *ngIf="project" class="jumbotron">
+	<p>{{project.description}}</p>
+	<p *ngIf="project.image"> Click the image to visit {{project.title}} </p>
+	<a [href]="project.url"> <img *ngIf="project.image" [src]="project.image" alt="img" width="400px" /></a>
+	<span>
+		<a class="btn btn-primary btn-lg" [href]="project.code"> Code Repository</a>
+	</span>
+	<dl>
+		<dt class="btn btn-info btn-lg">Tools: </dt>
+		<dd class="btn btn-info btn-lg" *ngFor="let tool of project.tools"> {{tool}} </dd>
+	</dl>
+</section>
