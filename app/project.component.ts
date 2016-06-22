@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 export class ProjectComponent {
 	@Input()
 	project: Project;
+};
 	// constructor(appComponent: AppComponent) {
 	// 	this.project = appComponent.selectedProject;
 	// }
