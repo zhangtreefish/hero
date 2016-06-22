@@ -1,0 +1,15 @@
+<div class='container'>
+	<div class='row'>
+	  	<div class='col-md-4'>
+		  	<h2>Front End Projects</h2>
+		  	<div *ngFor="let project of frontEndProjects" (click)="gotoDetail(project)" class="front">{{project.title}}
+			</div>
+		</div>
+
+	  	<div class='col-md-4'>
+			<h2>Full Stack Projects</h2>
+		  	<div *ngFor="let project of fullStackProjects" (click)="gotoDetail(project)" class="full">{{project.title}}
+			</div>
+		</div>
+	</div>
+</div>
