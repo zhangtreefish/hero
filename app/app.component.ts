@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import { ProjectsComponent } from './projects.component';
+import { DashboardComponent } from './dashboard.component';
 import { ProjectService } from './project.service';
 import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from '@angular/router-deprecated';
 
@@ -10,6 +11,12 @@ import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from '@angular/route
 	providers: [ROUTER_PROVIDERS, ProjectService]
 })
 @RouteConfig([
+	{
+		path: '/dashboard',
+		name: 'Dashboard',
+		component: DashboardComponent,
+		useAsDefault: true
+	},
 	{
 		path: '/projects',
 		name: 'Projects',
