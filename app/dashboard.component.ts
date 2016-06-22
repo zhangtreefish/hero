@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import { Project } from './project';
 import { ProjectService } from './project.service';
+import { Router } from '@angular/router-deprecated';
 
 @Component({
 	selector: 'my-dashboard',
@@ -11,9 +12,11 @@ export class DashboardComponent implements OnInit {
 	frontEndProjects: Project[];
 	fullStackProjects: Project[];
 
-//	selectedProject: Project;
+	//	selectedProject: Project;
 
-	constructor(private _projectService: ProjectService) { };
+	constructor(
+		private _projectService: ProjectService,
+		private _router: Router) { };
 
 	getProjects() {
 		this._projectService.getProjects().then(projects => {
@@ -26,6 +29,9 @@ export class DashboardComponent implements OnInit {
 		this.getProjects();
 	}
 
-	gotoDetail() {
+	gotoDetail(project: Project) {
+		let link = ['ProjectDetail', { id: project.id }];
+		this._router.navigate(link);
 	}
+}
 

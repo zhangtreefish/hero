@@ -1,6 +1,6 @@
 import { Project } from './project'
 
-export var PROJECTS: Project[] = [
+export const PROJECTS: Project[] = [
 	{
 		"id": 1,
 		"genre": "front end",

@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import { ProjectsComponent } from './projects.component';
+import { ProjectComponent } from './project.component';
 import { DashboardComponent } from './dashboard.component';
 import { ProjectService } from './project.service';
 import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from '@angular/router-deprecated';
@@ -21,7 +22,12 @@ import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from '@angular/route
 		path: '/projects',
 		name: 'Projects',
 		component: ProjectsComponent
-	}
+	},
+	{
+		path: '/detail/:id',
+		name: 'ProjectDetail',
+		component: ProjectComponent
+	},
 ])
 export class AppComponent {
 	title = 'Tour of Projects';
