@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import { ProjectComponent } from './project.component';
-import { ProjectService } from './project.service'
+import { ProjectService } from './project.service';
 
 export class Project {
 	id: number;
