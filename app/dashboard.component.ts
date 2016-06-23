@@ -12,8 +12,6 @@ export class DashboardComponent implements OnInit {
 	frontEndProjects: Project[];
 	fullStackProjects: Project[];
 
-	//	selectedProject: Project;
-
 	constructor(
 		private _projectService: ProjectService,
 		private _router: Router) { };
