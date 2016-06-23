@@ -6,6 +6,7 @@ import {SkillService} from './skill.service';
 @Component({
 	selector: 'skills',
 	templateUrl: 'app/skills.component.html',
+	styleUrls: ['app/skills.component.css'],
 	providers: [SkillService]
 })
 export class SkillsComponent implements OnInit {
