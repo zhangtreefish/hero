@@ -22,3 +22,11 @@ https://github.com/rkirov/angular2-tour-of-heroes
 1. http://stackoverflow.com/questions/34335340/angular2-quickstart-npm-start-is-not-working-correctly
 2. https://github.com/angular/protractor/blob/master/docs/getting-started.md
 
+
+# Acknowledgment
+1. https://leanpub.com/visual-regression-testing-and-webdriverio-guide
+2. images from open source:
+1)	Stacked Cars in Vancouver from Flickr - Photo Sharing
+2)	2011 Ford Fiesta RS World Rally Car from seriouswheels.com
+
+

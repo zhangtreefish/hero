@@ -18,7 +18,7 @@ export class InMemoryDataService {
 				"title": "Tour of Projects",
 				"dates": "2016-2016",
 				"description": "Showcased my projects and web develop skills",
-				"tools": ["Angular2", "typescript"],
+				"tools": ["Angular2", "typescript", "Selenium", "WebDriverIO", "Node.js"],
 				"image": "http://i.imgur.com/yyR3ZmX.png",
 				"url": "",
 				"code": "https://github.com/zhangtreefish/projects.git"
