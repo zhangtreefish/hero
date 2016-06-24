@@ -19,6 +19,7 @@ export class InMemoryDataService {
 				"dates": "2016-2016",
 				"description": "Showcased my projects and web develop skills",
 				"tools": ["Angular2", "typescript"],
+				"image": "http://i.imgur.com/yyR3ZmX.png",
 				"url": "",
 				"code": "https://github.com/zhangtreefish/projects.git"
 			},
