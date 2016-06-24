@@ -1,15 +1,14 @@
-<div class='container'>
-	<div class='row'>
-	  	<div class='col-md-4'>
-		  	<h2>Front End Projects</h2>
-		  	<div *ngFor="let project of frontEndProjects" (click)="gotoDetail(project)" class="front">{{project.title}}
-			</div>
-		</div>
-
-	  	<div class='col-md-4'>
-			<h2>Full Stack Projects</h2>
-		  	<div *ngFor="let project of fullStackProjects" (click)="gotoDetail(project)" class="full">{{project.title}}
-			</div>
-		</div>
-	</div>
-</div>
+<panel class='front'> Front End Projects
+    <ul class="projects">
+        <li *ngFor="let project of frontEndProjects" [class.selected]="project === selectedProject" (click)="gotoDetail(project)">
+            <span class="badge">{{project.id}}</span> {{project.title}}
+        </li>
+    </ul>
+</panel>
+<panel class='full'> Full Stack Projects
+    <ul class="projects">
+        <li *ngFor="let project of fullStackProjects" [class.selected]="project === selectedProject" (click)="gotoDetail(project)">
+            <span class="badge">{{project.id}}</span> {{project.title}}
+        </li>
+    </ul>
+</panel>

@@ -1,5 +1,0 @@
-<ul class="projects">
-  <li *ngFor="let project of projects" [class.selected]="project === selectedProject" (click)="gotoDetail(project)">
-  	<span class="badge">{{project.id}}</span> {{project.title}}
-  </li>
-</ul>

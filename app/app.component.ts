@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import { ProjectsComponent } from './projects.component';
+import { SkillsComponent } from './skills.component';
 import { ProjectComponent } from './project.component';
 import { DashboardComponent } from './dashboard.component';
 import { ProjectService } from './project.service';
@@ -19,9 +19,9 @@ import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from '@angular/route
 		useAsDefault: true
 	},
 	{
-		path: '/projects',
-		name: 'Projects',
-		component: ProjectsComponent
+		path: '/skills',
+		name: 'Skills',
+		component: SkillsComponent
 	},
 	{
 		path: '/detail/:id',
