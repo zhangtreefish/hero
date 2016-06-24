@@ -1,4 +1,8 @@
-<panel class='front'> <img src='app/front.jpg' alt='image' width='100px'/> Front End
+<panel class='front'>
+    <p class='title'>
+        Front End
+        <img src='app/front.jpg' alt='image' width='100px'/>
+    </p>
     <ul class="projects">
         <li *ngFor="let project of frontEndProjects" [class.selected]="project === selectedProject" (click)="gotoDetail(project)">
             <span class="badge">{{project.id}}</span> {{project.title}}
@@ -6,7 +10,10 @@
     </ul>
 </panel>
 <panel class='full'>
-    <p class='title'> Full Stack <img src='app/stack.jpg' alt='image' width='100px'/> <p>
+    <p class='title'>
+        <img src='app/stack.jpg' alt='image' width='100px'/>
+        Full Stack
+    <p>
     <ul class="projects">
         <li *ngFor="let project of fullStackProjects" [class.selected]="project === selectedProject" (click)="gotoDetail(project)">
             <span class="badge">{{project.id}}</span> {{project.title}}

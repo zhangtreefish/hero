@@ -1,8 +1,18 @@
 <div class='container-fluid'>
 	<h1>{{title}}</h1>
-	<nav class='navbar navbar-inverse'>
-		<a [routerLink]="['Dashboard']"><span class="glyphicon glyphicon-list"></span> Dashboard</a>
-		<a [routerLink]="['Skills']"><span class="glyphicon glyphicon-wrench"></span> Skills</a>
-	</nav>
+	<ul class='nav nav-tabs'>
+		<li>
+			<a [routerLink]="['Dashboard']">
+				<span class="glyphicon glyphicon-list"></span>
+				 Projects
+			</a>
+		</li>
+		<li>
+			<a [routerLink]="['Skills']">
+			<span class="glyphicon glyphicon-wrench"></span>
+			 Tools
+			</a>
+		</li>
+	</ul>
 	<router-outlet></router-outlet>
 </div>
