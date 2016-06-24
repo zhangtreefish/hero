@@ -1,6 +1,8 @@
-<h1>{{title}}</h1>
-<nav>
-	<a [routerLink]="['Dashboard']">Dashboard</a>
-	<a [routerLink]="['Skills']">Skills</a>
-</nav>
-<router-outlet></router-outlet>
+<div class='container-fluid'>
+	<h1>{{title}}</h1>
+	<nav class='navbar navbar-inverse'>
+		<a [routerLink]="['Dashboard']"><span class="glyphicon glyphicon-list"></span> Dashboard</a>
+		<a [routerLink]="['Skills']"><span class="glyphicon glyphicon-wrench"></span> Skills</a>
+	</nav>
+	<router-outlet></router-outlet>
+</div>

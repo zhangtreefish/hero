@@ -56,3 +56,6 @@
     margin-right: .8em;
     border-radius: 4px 0 0 4px;
 }
+panel .title {
+   margin-left: 5.0em;
+}
