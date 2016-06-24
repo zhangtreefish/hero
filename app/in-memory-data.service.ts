@@ -13,6 +13,16 @@ export class InMemoryDataService {
 			// 	"code": "https://github.com/zhangtreefish/Project-5-for-Front-End-Web-Developer-Nanodegree"
 			// },
 			{
+				"id": 1,
+				"genre": "front end",
+				"title": "Tour of Projects",
+				"dates": "2016-2016",
+				"description": "Showcased my projects and web develop skills",
+				"tools": ["Angular2", "typescript"],
+				"url": "",
+				"code": "https://github.com/zhangtreefish/projects.git"
+			},
+			{
 				"id": 2,
 				"genre": "full stack",
 				"title": "Therapeutic Foods",
