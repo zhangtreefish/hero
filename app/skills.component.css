@@ -1,6 +1,23 @@
 li {
-    display: block;
-    width: 33%;
+    width: 40%;
     float: left;
     font-size: 1.5em;
+    background-color: #EEE;
+    margin: .2em;
 }
+ul {
+	list-style: none;
+}
+/*li {
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: #EEE;
+    margin: .5em;
+    padding: .3em 0;
+    height: 1.6em;
+    border-radius: 4px;
+    font-size: 1.0em;
+    width: 33%;
+    float: left;
+}*/
