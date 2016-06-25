@@ -28,5 +28,6 @@ https://github.com/rkirov/angular2-tour-of-heroes
 2. images from open source:
 1)	Stacked Cars in Vancouver from Flickr - Photo Sharing
 2)	2011 Ford Fiesta RS World Rally Car from seriouswheels.com
+3. http://cwbuecheler.com/web/tutorials/2013/node-express-mongo/
 
 
